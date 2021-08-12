@@ -1,16 +1,13 @@
-# This is a sample Python script.
+def lothar (n):
+    count=0
+    while(n!=1):
+        if(n%2 == 0):
+            n/=2
+        else:
+            n = (n*3) +1
+        count+=1
+    return count
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+n = int(input("Ingrese un entero: "))
+print(f"la cantidad de pasos hasta alcanzar el número Lothar es {lothar(n)}")
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
