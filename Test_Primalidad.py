@@ -1,5 +1,13 @@
 def primo(n):
-  count=1
+    if(n<=2):
+        return False
+    else:
+        for i in range (2,n):
+            if (n % i == 0):
+                return False
+            else:
+                return True
+"""  count=1
   inc=0
   if(n > 1):
      while(count<=n):
@@ -13,10 +21,9 @@ def primo(n):
      else:
         return False
   else:
-      return False
+      return False"""
 
-
-n=int(input("Ingrese un número entero "))
+n=int(input("Ingrese un número entero: "))
 
 if(primo(n)):
     print(f"el número {n} es Primo")
